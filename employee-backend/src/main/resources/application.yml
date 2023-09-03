@@ -1,0 +1,23 @@
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
+server:
+  port: 2000
+spring:
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  datasource:
+    password: 1316
+    url: jdbc:mysql://localhost:3306/backend
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
