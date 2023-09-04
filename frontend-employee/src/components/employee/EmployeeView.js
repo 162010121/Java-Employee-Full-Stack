@@ -64,7 +64,7 @@ useEffect(() =>
                             </td>
                             <td className="mx-2">
                             <button className="btn btn-danger" 
-                            onClick={() => handleDelete(employee.id)}>
+                            onClick={() => {if(window.confirm('Are you sure to delete this record?')){handleDelete(employee.id)};}}>
                                <FaTrashAlt />
                                 </button>
                             </td>
